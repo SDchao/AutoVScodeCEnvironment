@@ -35,20 +35,21 @@
             // label
             // 
             this.label.AutoSize = true;
-            this.label.Location = new System.Drawing.Point(21, 23);
+            this.label.Location = new System.Drawing.Point(22, 23);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(353, 36);
+            this.label.Size = new System.Drawing.Size(431, 36);
             this.label.TabIndex = 0;
-            this.label.Text = "欢迎使用VS code C语言环境一键配置器\r\n该程序会自动为您安装编译器、添加系统环境变量与写入配置文件\r\n你所需要做的就是以管理员权限启动这个应用，再选择个文" +
-    "件夹。";
+            this.label.Text = "欢迎使用VS code C语言环境一键配置器\r\n该程序会自动为您安装编译器、添加系统环境变量与写入配置文件\r\n你所需要做的就是安装VS code、以管理员权限启动" +
+    "这个应用，再选择个文件夹。";
+            this.label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button
             // 
-            this.button.Location = new System.Drawing.Point(126, 74);
+            this.button.Location = new System.Drawing.Point(153, 75);
             this.button.Name = "button";
-            this.button.Size = new System.Drawing.Size(161, 40);
+            this.button.Size = new System.Drawing.Size(161, 52);
             this.button.TabIndex = 1;
-            this.button.Text = "已获取管理员权限\r\n开始吧！";
+            this.button.Text = "已安装VScode\r\n有管理员权限\r\n开始吧！";
             this.button.UseVisualStyleBackColor = true;
             this.button.Click += new System.EventHandler(this.button_Click);
             // 
@@ -57,7 +58,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(400, 125);
+            this.ClientSize = new System.Drawing.Size(475, 139);
             this.Controls.Add(this.button);
             this.Controls.Add(this.label);
             this.MaximizeBox = false;
