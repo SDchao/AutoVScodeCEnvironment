@@ -19,6 +19,7 @@ namespace AutoVScodeCEnvironment.Classes
             {
                 Clipboard.SetText(e.StackTrace);
                 MessageBox.Show("错误信息已复制到您的剪切板，感谢您的反馈！", "O(∩_∩)O谢谢！");
+                System.Diagnostics.Process.Start("https://github.com/SDchao/AutoVScodeCEnvironment/issues/new");
             }
             Environment.Exit(0);
         }
