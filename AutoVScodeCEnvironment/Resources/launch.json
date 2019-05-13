@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "targetArchitecture": "x86",
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "miDebuggerPath": "c:\\MinGW\\bin\\gdb.exe", // 注意这里要与本机MinGw的路径对应
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}",
+            "externalConsole": true,
+            "preLaunchTask": "gcc"
+        }
+    ]
+}
