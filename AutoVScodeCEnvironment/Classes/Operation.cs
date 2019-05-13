@@ -95,7 +95,7 @@ namespace AutoVScodeCEnvironment.Classes
                     File.Delete(Path.GetTempPath() + "\\MinGW.7z");
 
                 form.Close();
-                MessageBox.Show("已完成全部操作", "提示");
+                MessageBox.Show("已完成全部操作\n[]~(￣▽￣)~*", "提示");
 
                 ExecuteOutCmd("code -a " + projectPath);
 

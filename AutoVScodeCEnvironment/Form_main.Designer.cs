@@ -30,6 +30,7 @@
         {
             this.label = new System.Windows.Forms.Label();
             this.button = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label
@@ -53,12 +54,23 @@
             this.button.UseVisualStyleBackColor = true;
             this.button.Click += new System.EventHandler(this.button_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label1.Location = new System.Drawing.Point(4, 118);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(143, 12);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "By SDchao From BiliBili";
+            // 
             // Form_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(475, 139);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button);
             this.Controls.Add(this.label);
             this.MaximizeBox = false;
@@ -76,6 +88,7 @@
         #endregion
         private System.Windows.Forms.Button button;
         public System.Windows.Forms.Label label;
+        private System.Windows.Forms.Label label1;
     }
 }
 
