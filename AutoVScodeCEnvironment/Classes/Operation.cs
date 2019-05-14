@@ -83,8 +83,8 @@ namespace AutoVScodeCEnvironment.Classes
                 phase = "安装Vscode C/C++插件";
                 UpdateFormText(phase);
                 string strOutPut = ExecuteOutCmd("code --install-extension ms-vscode.cpptools");
-                if (!strOutPut.Contains("was successfully installed!")
-                    && !strOutPut.Contains("Extension 'ms-vscode.cpptools' is already installed."))
+                if (!strOutPut.Contains("was successfully installed")
+                    && !strOutPut.Contains("is already installed"))
                 {
                     throw new Exception("未能成功安装C/C++插件" + "\n" + strOutPut);
                 }
