@@ -21,9 +21,16 @@ namespace AutoVScodeCEnvironment.Classes
         {
             form = new Form_Process();
             form.Show();
-            Thread thread = new Thread(() => StartThread(projectPath));
-            thread.SetApartmentState(ApartmentState.STA);
-            thread.Start();
+            try
+            {
+                Thread thread = new Thread(() => StartThread(projectPath));
+                thread.Start();
+            }
+            catch(Exception e)
+            {
+                ExceptionHandler.ShowError("创建线程", e);
+            }
+            
         }
 
         private void StartThread(string projectPath)

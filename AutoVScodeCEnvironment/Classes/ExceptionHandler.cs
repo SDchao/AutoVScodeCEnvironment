@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace AutoVScodeCEnvironment.Classes
 {
@@ -17,11 +18,19 @@ namespace AutoVScodeCEnvironment.Classes
                             "您是否要向作者提交Issue?", "错误", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
             if (result == DialogResult.Yes)
             {
-                Clipboard.SetText(e.StackTrace);
+                // Clipboard.SetText("过程：" + name + "\n信息：" +  e.Message + "\n" + e.StackTrace);
+                Thread sta = new Thread(new ParameterizedThreadStart(SetClipboard));
+                sta.SetApartmentState(ApartmentState.STA);
+                sta.Start("过程：" + name + "\n信息：" + e.Message + "\n" + e.StackTrace);
                 MessageBox.Show("错误信息已复制到您的剪切板，感谢您的反馈！", "O(∩_∩)O谢谢！");
                 System.Diagnostics.Process.Start("https://github.com/SDchao/AutoVScodeCEnvironment/issues/new");
             }
             Environment.Exit(0);
+        }
+
+        private static void SetClipboard(object text)
+        {
+            Clipboard.SetText(text.ToString());
         }
     }
 }
