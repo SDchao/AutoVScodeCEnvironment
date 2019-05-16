@@ -19,16 +19,19 @@ namespace AutoVScodeCEnvironment.Classes
             if (result == DialogResult.Yes)
             {
                 // Clipboard.SetText("过程：" + name + "\n信息：" +  e.Message + "\n" + e.StackTrace);
-                Thread sta = new Thread(new ParameterizedThreadStart(SetClipboard));
+                Thread sta = new Thread(() => SetClipboard(
+                    "过程：" + name + "\n信息：" + e.Message + "\n" + e.StackTrace));
                 sta.SetApartmentState(ApartmentState.STA);
-                sta.Start("过程：" + name + "\n信息：" + e.Message + "\n" + e.StackTrace);
+                sta.Start();
+                sta.Join();
+
                 MessageBox.Show("错误信息已复制到您的剪切板，感谢您的反馈！", "O(∩_∩)O谢谢！");
                 System.Diagnostics.Process.Start("https://github.com/SDchao/AutoVScodeCEnvironment/issues/new");
             }
             Environment.Exit(0);
         }
 
-        private static void SetClipboard(object text)
+        private static void SetClipboard(string text)
         {
             Clipboard.SetText(text.ToString());
         }
