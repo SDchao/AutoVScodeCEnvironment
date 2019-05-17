@@ -65,10 +65,6 @@ namespace AutoVScodeCEnvironment
 
         private void button_Click(object sender, EventArgs e)
         {
-            if(updateThread.ThreadState == ThreadState.Running)
-            {
-                updateThread.Interrupt();
-            }
             FolderBrowserDialog dialog = new FolderBrowserDialog
             {
                 Description = "请选择您的工程文件夹\n您今后的C语言源码都需要储存在此文件夹内。",
@@ -76,6 +72,10 @@ namespace AutoVScodeCEnvironment
             DialogResult dialogResult = dialog.ShowDialog();
             if (dialogResult == DialogResult.OK)
             {
+                if (updateThread.ThreadState == ThreadState.Running)
+                {
+                    updateThread.Interrupt();
+                }
                 this.Visible = false;
                 Operation operation = new Operation();
                 operation.Start(dialog.SelectedPath,this);
