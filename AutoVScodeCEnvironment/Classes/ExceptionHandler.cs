@@ -10,6 +10,7 @@ namespace AutoVScodeCEnvironment.Classes
 {
     class ExceptionHandler
     {
+
         public static void ShowError(string name, Exception e)
         {
             DialogResult result = MessageBox.Show("在处理" + name + "时发生异常：\n" +

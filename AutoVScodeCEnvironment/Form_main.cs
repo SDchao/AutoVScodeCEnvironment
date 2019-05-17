@@ -29,8 +29,14 @@ namespace AutoVScodeCEnvironment
             {
                 this.Visible = false;
                 Operation operation = new Operation();
-                operation.Start(dialog.SelectedPath);
+                operation.Start(dialog.SelectedPath,this);
+                
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.bilibili.com/video/av52434248");
         }
     }
 }
