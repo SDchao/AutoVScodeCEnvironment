@@ -99,5 +99,14 @@ namespace AutoVScodeCEnvironment {
                 return ((byte[])(obj));
             }
         }
+        
+        /// <summary>
+        ///   查找类似 1.3 的本地化字符串。
+        /// </summary>
+        internal static string Version {
+            get {
+                return ResourceManager.GetString("Version", resourceCulture);
+            }
+        }
     }
 }

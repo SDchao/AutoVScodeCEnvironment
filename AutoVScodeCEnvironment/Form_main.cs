@@ -13,9 +13,16 @@ namespace AutoVScodeCEnvironment
 {
     public partial class Form_main : Form
     {
+
         public Form_main()
         {
             InitializeComponent();
+            CheckUpdate();
+        }
+
+        private void CheckUpdate()
+        {
+
         }
 
         private void button_Click(object sender, EventArgs e)
