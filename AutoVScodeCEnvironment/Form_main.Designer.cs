@@ -80,7 +80,6 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "欢迎";
-            this.TopMost = true;
             this.ResumeLayout(false);
             this.PerformLayout();
 
