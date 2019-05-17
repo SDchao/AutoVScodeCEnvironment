@@ -16,7 +16,7 @@ namespace AutoVScodeCEnvironment
 {
     public partial class Form_main : Form
     {
-        private float version = 1.2f;
+        private float version = 1.3f;
         private Thread updateThread;
         
         public Form_main()
