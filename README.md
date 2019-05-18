@@ -20,4 +20,5 @@
 
 ### 为什么调试时弹出窗口，内容包含“This application requires one of the following versions of the .Net Framework”
 请点击“是”，打开网站，点击**Download .Net Framework x.x.x Runtime**，再打开下载文件，根据提示安装。
+
 若您的电脑没有安装.Net运行环境，则无法启用VScode的调试功能。**这并非本软件的缺陷。**
