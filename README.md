@@ -12,8 +12,11 @@
 ### 为什么安装C/C++失败？
 请在安装过VS code后重启电脑，若仍然无法安装，请提交Issue。
 
-### 为什么自动启动VS code，F5调试后出现未知命令错误？
+### 为什么自动启动VS code，F5调试后出现'gcc' 不是内部或外部命令，也不是可运行的程序或批处理文件？
 请重启VS code。
 
 ### 为什么点击安装后窗口闪一下就没了？
 请解压后再运行程序，切勿在压缩包内运行。解压出来的DLL文件请不要删除。
+
+### 为什么调试时弹出窗口，内容包含“This application requires one of the following versions of the .Net Framework”
+请点击“是”，打开网站，点击**Download .Net Framework x.x.x Runtime**，再打开下载文件，根据提示安装。
