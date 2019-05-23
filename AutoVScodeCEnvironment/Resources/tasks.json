@@ -1,6 +1,7 @@
 {
   "version": "2.0.0",
-  "command": "gcc",
+  "label": "gcc",
+  "command": "g++",
   "type": "shell",
   "presentation": {
     "echo": true,
