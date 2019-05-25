@@ -12,7 +12,7 @@
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "externalConsole": true,
-            "preLaunchTask": "gcc"
+            "preLaunchTask": "g++"
         }
     ]
 }
