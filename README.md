@@ -22,3 +22,14 @@
 请点击“是”，打开网站，点击**Download .Net Framework x.x.x Runtime**，再打开下载文件，根据提示安装。
 
 若您的电脑没有安装.Net运行环境，则无法启用VScode的调试功能。**这并非本软件的缺陷。**
+
+# 关注我
+您可以在Bilibili上关注我：[点击关注](https://space.bilibili.com/12263994)
+
+如果软件对您有用的话，欢迎捐赠！
+
+<div align=center display="inline-block">
+  <img valign="middle" width="50%" height="50%" src="https://raw.githubusercontent.com/SDchao/TurboBoostSwitcher/master/TurboBoostSwitcher/Resources/wechat.png"/>  
+ <img valign="middle" width="50%" height="50%" src="https://raw.githubusercontent.com/SDchao/TurboBoostSwitcher/master/TurboBoostSwitcher/Resources/alipay.jpg"/>
+</div>
+
