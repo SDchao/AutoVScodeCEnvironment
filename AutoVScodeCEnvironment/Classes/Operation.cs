@@ -170,8 +170,9 @@ namespace AutoVScodeCEnvironment.Classes
                 process.StandardInput.AutoFlush = true;
                 process.StandardInput.WriteLine(cmdline + "&exit");
 
-                process.WaitForExit();
                 string output = process.StandardOutput.ReadToEnd();
+                process.WaitForExit();
+                
                 process.Close();
 
                 return output;
