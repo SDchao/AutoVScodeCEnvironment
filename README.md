@@ -1,6 +1,8 @@
 # AutoVScodeCEnvironment
 自动配置C语言开发环境
 
+# 已停止维护！请使用[AutoVsCEnv_WPF](https://github.com/SDchao/AutoVsCEnv_WPF)
+
 这个程序可以帮助萌新们自动配置C语言环境，自动安装MinGW编译器（安装目录
 **C:\\MinGW**
 ），自动设置环境变量，自动安装C/C++插件
