@@ -6,9 +6,15 @@
             "type": "cppdbg",
             "request": "launch",
             "targetArchitecture": "x86",
-            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "program": "C:\\Windows\\system32\\cmd.exe",
+            "args": [
+                "/C",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "&",
+                "pause",
+                ">nul"
+            ],
             "miDebuggerPath": "c:\\MinGW\\bin\\gdb.exe",
-            "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "externalConsole": true,
